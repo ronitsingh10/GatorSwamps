@@ -54,6 +54,10 @@ func main() {
 
     // Static file serving for the React app
     staticRoot := "../frontend/dist"
+    if _, err := os.Stat(staticRoot); os.IsNotExist(err) {
+        // Try the alternative path for production
+        staticRoot = "../../frontend/dist"
+    }
 
     // 1. Serve static assets directly
     r.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", http.FileServer(http.Dir(staticRoot+"/assets"))))

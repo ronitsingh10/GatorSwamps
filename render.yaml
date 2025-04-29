@@ -4,8 +4,8 @@ services:
     env: go
     buildCommand: |
       cd frontend && npm install && npm run build
-      cd ../backend && go build -o ../gatorswamp
-    startCommand: ./gatorswamp
+      cd ../backend && go build -o gatorswamp
+    startCommand: cd backend && ./gatorswamp
     envVars:
       - key: PORT
         value: 5500
