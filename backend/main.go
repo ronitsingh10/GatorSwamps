@@ -97,7 +97,6 @@ func main() {
         "http://localhost:3000",
         "http://localhost:5500",
         "https://gatorswamp.onrender.com",
-        "https://www.gator-homes.com",
     }
     corsHandler := handlers.CORS(
         handlers.AllowedOrigins(allowed),

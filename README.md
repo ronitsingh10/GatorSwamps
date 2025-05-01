@@ -2,6 +2,17 @@
 
 A full-stack housing management application built with React and Go.
 
+# Overview
+
+<p align="center" style="overflow-x: auto; white-space: nowrap;">
+  <img src="frontend/public/images/SI.png" width="300" />
+  <img src="frontend/public/images/SII.png" width="300" />
+  <img src="frontend/public/images/SIII.png" width="300" />
+  <img src="frontend/public/images/SIV.png" width="300" />
+  <img src="frontend/public/images/SV.png" width="300" />
+</p>
+
+
 ## 🏗 Project Structure
 
 ```
@@ -58,7 +69,6 @@ GatorSwamp/
    ```
    PORT=5500
    MONGO_URI=your_mongodb_uri
-   DB_NAME=Gator-Homes
    JWT_SECRET=your_jwt_secret
    ```
 
@@ -116,6 +126,7 @@ The build output will be in the `dist` directory.
 ```bash
 cd backend
 go build -o gatorswamp
+./gatorswamp
 ```
 
 ## 🔒 Security Features
